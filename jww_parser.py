@@ -69,18 +69,54 @@ class _R:
         v = struct.unpack_from("<d", self.b, self.i)[0]; self.i += 8; return v
 
     def mfc_string(self) -> str:
-        """JWW/MFC-ish length-prefixed string.
+        """MFC CArchive length-prefixed string.
 
-        - BYTE len; if 0 → empty
-        - if len == 0xFF → WORD length follows
-        - payload in Shift_JIS
+        Handles the full encoding family used by MFC (also by JWW v7+):
+            BYTE b
+            if b < 0xFF:         length = b          (ASCII/Shift_JIS)
+            else:
+                WORD w
+                if w == 0xFFFE:  Unicode marker     (wide-char payload)
+                    BYTE b2
+                    if b2 < 0xFF:        length = b2
+                    else:
+                        WORD w2
+                        if w2 != 0xFFFF: length = w2
+                        else:            DWORD dw   → length = dw
+                    payload = ReadWideChars(length)
+                elif w == 0xFFFF:                   (long ASCII)
+                    DWORD dw                        → length = dw
+                    payload = ReadBytes(length)
+                else:
+                    length = w
+                    payload = ReadBytes(length)
         """
         bt = self.u8()
         if bt == 0:
             return ""
-        length = bt if bt != 0xFF else self.u16()
-        raw = self.read(length)
-        return raw.decode("shift_jis", errors="replace")
+        if bt != 0xFF:
+            return self.read(bt).decode("shift_jis", errors="replace")
+
+        w = self.u16()
+        if w == 0xFFFE:
+            # Unicode payload, re-read length
+            bt2 = self.u8()
+            if bt2 == 0:
+                return ""
+            if bt2 != 0xFF:
+                length_chars = bt2
+            else:
+                w2 = self.u16()
+                if w2 != 0xFFFF:
+                    length_chars = w2
+                else:
+                    length_chars = self.u32()
+            raw = self.read(length_chars * 2)
+            return raw.decode("utf-16-le", errors="replace")
+        if w == 0xFFFF:
+            length = self.u32()
+            return self.read(length).decode("shift_jis", errors="replace")
+        return self.read(w).decode("shift_jis", errors="replace")
 
 
 # ---------------------------------------------------------------------------
