@@ -1,0 +1,397 @@
+{
+  "version": 3,
+  "projects": [
+    {
+      "date": "2026-04-19T13:56:06.209035",
+      "building_type": "hospital/residential/parking/warehouse/elderly/hotel/factory/nursery",
+      "features": [
+        "assembly",
+        "childcare",
+        "elderly_care",
+        "has_kitchen",
+        "has_parking",
+        "has_server_room",
+        "highrise",
+        "medical",
+        "residential"
+      ],
+      "file_count": 132,
+      "floor_count": 7,
+      "total_rooms": 1399,
+      "ratios": {
+        "fire_detection": {
+          "count": 6038,
+          "per_floor": 862.6
+        },
+        "exit_light": {
+          "count": 43,
+          "per_floor": 6.1
+        },
+        "emergency_light": {
+          "count": 28,
+          "per_floor": 4.0
+        },
+        "outlet": {
+          "count": 395,
+          "per_floor": 56.4
+        },
+        "outlet_grounded": {
+          "count": 152,
+          "per_floor": 21.7
+        },
+        "switch": {
+          "count": 82,
+          "per_floor": 11.7
+        },
+        "lighting": {
+          "count": 5565,
+          "per_floor": 795.0
+        },
+        "dist_board": {
+          "count": 56,
+          "per_floor": 8.0
+        },
+        "breaker_elcb": {
+          "count": 68,
+          "per_floor": 9.7
+        },
+        "nurse_call": {
+          "count": 16,
+          "per_floor": 2.3
+        },
+        "intercom": {
+          "count": 27,
+          "per_floor": 3.9
+        },
+        "broadcast": {
+          "count": 50,
+          "per_floor": 7.1
+        },
+        "electric_lock": {
+          "count": 15,
+          "per_floor": 2.1
+        },
+        "medical_ground": {
+          "count": 13,
+          "per_floor": 1.9
+        },
+        "ups": {
+          "count": 14,
+          "per_floor": 2.0
+        },
+        "sprinkler": {
+          "count": 11,
+          "per_floor": 1.6
+        },
+        "tv_common": {
+          "count": 14,
+          "per_floor": 2.0
+        },
+        "solar_power": {
+          "count": 29,
+          "per_floor": 4.1
+        },
+        "telephone": {
+          "count": 15,
+          "per_floor": 2.1
+        },
+        "generator": {
+          "count": 18,
+          "per_floor": 2.6
+        },
+        "substation": {
+          "count": 8,
+          "per_floor": 1.1
+        },
+        "hvac": {
+          "count": 78,
+          "per_floor": 11.1
+        },
+        "ventilation": {
+          "count": 66,
+          "per_floor": 9.4
+        },
+        "smoke_exhaust": {
+          "count": 154,
+          "per_floor": 22.0
+        },
+        "lightning_rod": {
+          "count": 8,
+          "per_floor": 1.1
+        },
+        "power_supply": {
+          "count": 39,
+          "per_floor": 5.6
+        },
+        "auto_control": {
+          "count": 12,
+          "per_floor": 1.7
+        },
+        "itv": {
+          "count": 17,
+          "per_floor": 2.4
+        },
+        "lan": {
+          "count": 321,
+          "per_floor": 45.9
+        }
+      }
+    },
+    {
+      "date": "2026-04-19T16:34:10.359290",
+      "building_type": "hospital/residential/parking/warehouse/elderly/hotel/factory/nursery",
+      "features": [
+        "assembly",
+        "childcare",
+        "elderly_care",
+        "has_kitchen",
+        "has_parking",
+        "has_server_room",
+        "highrise",
+        "medical",
+        "residential"
+      ],
+      "file_count": 132,
+      "floor_count": 7,
+      "total_rooms": 1399,
+      "ratios": {
+        "fire_detection": {
+          "count": 6038,
+          "per_floor": 862.6
+        },
+        "exit_light": {
+          "count": 43,
+          "per_floor": 6.1
+        },
+        "emergency_light": {
+          "count": 28,
+          "per_floor": 4.0
+        },
+        "outlet": {
+          "count": 395,
+          "per_floor": 56.4
+        },
+        "outlet_grounded": {
+          "count": 152,
+          "per_floor": 21.7
+        },
+        "switch": {
+          "count": 82,
+          "per_floor": 11.7
+        },
+        "lighting": {
+          "count": 5565,
+          "per_floor": 795.0
+        },
+        "dist_board": {
+          "count": 56,
+          "per_floor": 8.0
+        },
+        "breaker_elcb": {
+          "count": 68,
+          "per_floor": 9.7
+        },
+        "nurse_call": {
+          "count": 16,
+          "per_floor": 2.3
+        },
+        "intercom": {
+          "count": 27,
+          "per_floor": 3.9
+        },
+        "broadcast": {
+          "count": 50,
+          "per_floor": 7.1
+        },
+        "electric_lock": {
+          "count": 15,
+          "per_floor": 2.1
+        },
+        "medical_ground": {
+          "count": 13,
+          "per_floor": 1.9
+        },
+        "ups": {
+          "count": 14,
+          "per_floor": 2.0
+        },
+        "sprinkler": {
+          "count": 11,
+          "per_floor": 1.6
+        },
+        "tv_common": {
+          "count": 14,
+          "per_floor": 2.0
+        },
+        "solar_power": {
+          "count": 29,
+          "per_floor": 4.1
+        },
+        "telephone": {
+          "count": 15,
+          "per_floor": 2.1
+        },
+        "generator": {
+          "count": 18,
+          "per_floor": 2.6
+        },
+        "substation": {
+          "count": 8,
+          "per_floor": 1.1
+        },
+        "hvac": {
+          "count": 78,
+          "per_floor": 11.1
+        },
+        "ventilation": {
+          "count": 66,
+          "per_floor": 9.4
+        },
+        "smoke_exhaust": {
+          "count": 154,
+          "per_floor": 22.0
+        },
+        "lightning_rod": {
+          "count": 8,
+          "per_floor": 1.1
+        },
+        "power_supply": {
+          "count": 39,
+          "per_floor": 5.6
+        },
+        "auto_control": {
+          "count": 12,
+          "per_floor": 1.7
+        },
+        "itv": {
+          "count": 17,
+          "per_floor": 2.4
+        },
+        "lan": {
+          "count": 321,
+          "per_floor": 45.9
+        }
+      }
+    }
+  ],
+  "baselines": {
+    "hospital/residential/parking/warehouse/elderly/hotel/factory/nursery": {
+      "outlet_grounded": {
+        "per_floor": 21.7,
+        "sample_count": 2
+      },
+      "fire_detection": {
+        "per_floor": 862.6,
+        "sample_count": 2
+      },
+      "nurse_call": {
+        "per_floor": 2.3,
+        "sample_count": 2
+      },
+      "ventilation": {
+        "per_floor": 9.4,
+        "sample_count": 2
+      },
+      "hvac": {
+        "per_floor": 11.1,
+        "sample_count": 2
+      },
+      "lan": {
+        "per_floor": 45.9,
+        "sample_count": 2
+      },
+      "lighting": {
+        "per_floor": 795.0,
+        "sample_count": 2
+      },
+      "broadcast": {
+        "per_floor": 7.1,
+        "sample_count": 2
+      },
+      "dist_board": {
+        "per_floor": 8.0,
+        "sample_count": 2
+      },
+      "exit_light": {
+        "per_floor": 6.1,
+        "sample_count": 2
+      },
+      "lightning_rod": {
+        "per_floor": 1.1,
+        "sample_count": 2
+      },
+      "itv": {
+        "per_floor": 2.4,
+        "sample_count": 2
+      },
+      "telephone": {
+        "per_floor": 2.1,
+        "sample_count": 2
+      },
+      "generator": {
+        "per_floor": 2.6,
+        "sample_count": 2
+      },
+      "emergency_light": {
+        "per_floor": 4.0,
+        "sample_count": 2
+      },
+      "intercom": {
+        "per_floor": 3.9,
+        "sample_count": 2
+      },
+      "electric_lock": {
+        "per_floor": 2.1,
+        "sample_count": 2
+      },
+      "auto_control": {
+        "per_floor": 1.7,
+        "sample_count": 2
+      },
+      "sprinkler": {
+        "per_floor": 1.6,
+        "sample_count": 2
+      },
+      "substation": {
+        "per_floor": 1.1,
+        "sample_count": 2
+      },
+      "switch": {
+        "per_floor": 11.7,
+        "sample_count": 2
+      },
+      "power_supply": {
+        "per_floor": 5.6,
+        "sample_count": 2
+      },
+      "breaker_elcb": {
+        "per_floor": 9.7,
+        "sample_count": 2
+      },
+      "medical_ground": {
+        "per_floor": 1.9,
+        "sample_count": 2
+      },
+      "solar_power": {
+        "per_floor": 4.1,
+        "sample_count": 2
+      },
+      "tv_common": {
+        "per_floor": 2.0,
+        "sample_count": 2
+      },
+      "ups": {
+        "per_floor": 2.0,
+        "sample_count": 2
+      },
+      "smoke_exhaust": {
+        "per_floor": 22.0,
+        "sample_count": 2
+      },
+      "outlet": {
+        "per_floor": 56.4,
+        "sample_count": 2
+      }
+    }
+  }
+}
